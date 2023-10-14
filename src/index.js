@@ -10,12 +10,15 @@ import {
 import Signup from './Components/Signup/Signup';
 import AddBook from './Components/AddBook/AddBook';
 import BooksTable from './Components/AddBook/BooksTable';
+import EditBook from './Components/AddBook/EditBook';
+import Login from './Components/Login/Login';
+import BookRequestsTable from './Components/AddBookRequest/BookRequestsTable';
 
 
 const router = createBrowserRouter([
   {
     path: "/",
-    element: <App />,
+    element: <Login />,
   },
   {
     path: "/signup",
@@ -28,6 +31,14 @@ const router = createBrowserRouter([
   {
     path: "/books",
     element: <BooksTable />,
+  },
+  {
+    path: "/editBook",
+    element: <EditBook />,
+  },
+  {
+    path: "/bookRequests",
+    element: <BookRequestsTable />,
   }
 ]);
 
